@@ -113,7 +113,7 @@ class Bank:
                 cur.execute("update card set balance = {} where number = {}".format(bal, other_card_number))
                 print("Success!\n")
         conn.commit()
-# todo: con.commit
+
 
 # END OF CLASS DEFINITION
 
@@ -187,7 +187,7 @@ while True:
                 elif input_op == 0:
                     print("\nBye!")
                     exit()
-    elif input_option == 5:
-         for row in cur.execute("select * from card"):
-             print(row)
+    #elif input_option == 5:
+    #     for row in cur.execute("select * from card"):
+    #         print(row)
 
