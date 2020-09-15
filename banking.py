@@ -3,6 +3,7 @@ import random
 import sqlite3
 # potential issue in the code: it does not take care of when randomly two card generations
 # are the exact same. While the event is unlikely, it is still something that could happen
+# todo: fix this issue in the next commit
 conn = sqlite3.connect("card.s3db")
 cur = conn.cursor()
 cur.execute("create table if not exists card(id integer, number text, pin text, balance integer default 0)")
